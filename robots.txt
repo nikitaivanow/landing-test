@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: /page18825395.html
+Disallow: /page18827579.html
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://www.gpo-home.com/sitemap.xml
+Host: https://www.gpo-home.com

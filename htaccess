@@ -1,0 +1,52 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page18831103.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://www\.gpo-home\.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^gpo-home.com [NC]
+RewriteRule ^(.*)$ https://www\.gpo-home\.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^ru$ page19370616.html [NC]
+RewriteRule ^ru/$ page19370616.html [NC]
+
+RewriteRule ^en$ page19473604.html [NC]
+RewriteRule ^en/$ page19473604.html [NC]
+
+RewriteRule ^application$ page18828527.html [NC]
+RewriteRule ^application/$ page18828527.html [NC]
+
+RewriteRule ^ru/application$ page19378566.html [NC]
+RewriteRule ^ru/application/$ page19378566.html [NC]
+
+RewriteRule ^en/application$ page19473771.html [NC]
+RewriteRule ^en/application/$ page19473771.html [NC]
+
+RewriteRule ^vendor$ page19037072.html [NC]
+RewriteRule ^vendor/$ page19037072.html [NC]
+
+RewriteRule ^ru/vendor$ page19451891.html [NC]
+RewriteRule ^ru/vendor/$ page19451891.html [NC]
+
+RewriteRule ^en/vendor$ page19473798.html [NC]
+RewriteRule ^en/vendor/$ page19473798.html [NC]
+
+RewriteRule ^contact-us$ page19075565.html [NC]
+RewriteRule ^contact-us/$ page19075565.html [NC]
+
+RewriteRule ^ru/contact-us$ page19378169.html [NC]
+RewriteRule ^ru/contact-us/$ page19378169.html [NC]
+
+RewriteRule ^en/contact-us$ page19473827.html [NC]
+RewriteRule ^en/contact-us/$ page19473827.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild6531-6439-4537-b636-383931663437/favicon_1.ico [R=302,L]
+
